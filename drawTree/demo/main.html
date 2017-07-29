@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>javascript 实现树</title>
+    <meta charset="utf-8">
+     <link rel="stylesheet" type="text/css" href="../css/master.css"/>
+   <!--  <style type="text/css">
+        @import url(css/master.css);
+    </style> -->
+</head>
+<body> 
+    <div id="select">
+        <div id="node">
+            <!-- <span>插入节点</span> -->
+            
+            <input type="text" placeholder="66" name="input-node" id="input-node" class="input1" />
+            <input type="submit" name="insert" value="插入" id="submit1" class="insert" />
+        </div>
+        <div id="search">
+            <!-- <span>查找</span> -->
+            <input type="text" name="search_node" id="searchANode" class="input1">
+            <input type="submit" name="search_node" value="查找" id="searchNode" class="insert">
+        </div>
+        <div id="operate">
+            <label>
+                <span>前序</span>
+                <input type="radio" name="left" id="preorder" value="left">
+            </label>
+            <label>
+                <span>中序</span>
+                <input type="radio" name="mid" id="inorder" value="mid">
+            </label>
+            <label>
+                <span>后序</span>
+                <input type="radio" name="right" id="postorder" value="right">
+            </label>
+             <label>
+                <span>重置</span>
+                <input type="radio" name="reset" id="reset" value="reset">
+            </label>
+        </div>
+       
+    </div>
+    <div id="chart-wrap" style="overflow:none">     
+    </div>
+</body>
+<script type="text/javascript" src="../scripts/require.js" data-main="../scripts/pub.main.js" ></script>
+</html>
+
+
+
+
+
+
+

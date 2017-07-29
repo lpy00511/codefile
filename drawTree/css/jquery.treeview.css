@@ -1,0 +1,239 @@
+html{
+	font-size: 15px;
+}
+@media (max-width: 1200px){
+	html{
+		font-size: 12px;
+	}
+}
+@media (max-width: 1000px){
+	html{
+		font-size: 10px;
+	}
+}
+
+#footer{
+	padding: 5px;
+	height: 37px;
+	/*margin-bottom: 0;*/
+	background-color: #06b;
+	color: white;
+	font-size: 14px;
+	font-family: serif;
+	border-bottom: 1px solid #06b;
+	text-align: center;
+}
+#banner .userinfo{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 0.8rem;
+}
+#banner .userinfo .user{
+	color: white;
+}
+#banner .userinfo .user::before{
+	content: url(../images/user.png);
+	padding-right: 5px;
+}
+#banner .userinfo .set{
+	color: #FFFACD;
+}
+#banner .userinfo .set::before{
+	content: url(../images/set.png);
+	margin-left: 5px;
+	margin-right: 5px;
+}
+#banner .userinfo .exit{
+	position: absolute;
+	background-color:  #06b;
+	width: 70px;
+	height: 20px;
+	top: 20px;
+	right: 10px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 0 5px #7D9EC0;
+}
+#container{
+	position: relative;
+	height: 85%;
+	display: inline-block;
+}
+#leftlist{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	width: 200px;
+	height: 100%;
+	border-right: 1px solid #aaa;
+	font-size: 13px;
+}
+#rightchart{
+	position: absolute;
+	top: 10px;
+	left: 230px;
+	width: 70rem;
+	height: 100%;
+	/*border: 1px solid #aaa;*/
+}
+.frame1 {
+	width: 80rem;
+	height: 100%;
+	border: none;
+}
+.treeview,.treeview ul {
+    padding: 0;
+    margin: 10px;
+    list-style: none;
+}
+.treeview ul {
+    background-color: white;
+    margin-top: 4px;
+}
+
+.treeview .hitarea {
+    background: url(../images/treeview-default.gif) -64px -25px no-repeat;
+    height:1.2rem;
+    width: 1.2rem;
+    margin-left: -16px;
+    float: left;
+    cursor: pointer;
+}
+
+
+/* fix for IE6 */
+
+* html .hitarea {
+    display: inline;
+    float: none;
+}
+
+.treeview li {
+    margin: 0;
+    padding: 3px 0pt 3px 16px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.treeview a.selected {
+    background-color: #eee;
+}
+
+#treecontrol {
+    margin: 1em 0;
+    display: none;
+}
+
+.treeview .hover {
+    color: red;
+    cursor: pointer;
+}
+
+.treeview li {
+    background: url(../images/treeview-default-line.gif) 0 0 no-repeat;
+}
+
+.treeview li.collapsable,
+.treeview li.expandable {
+    background-position: 0 -176px;
+}
+
+.treeview .expandable-hitarea {
+    background-position: -80px -3px;
+}
+
+.treeview li.last {
+    background-position: 0 -1766px
+}
+
+.treeview li.lastCollapsable,
+.treeview li.lastExpandable {
+    background-image: url(../images/treeview-default.gif);
+}
+
+.treeview li.lastCollapsable {
+    background-position: 0 -111px
+}
+
+.treeview li.lastExpandable {
+    background-position: -32px -67px
+}
+
+.treeview div.lastCollapsable-hitarea,
+.treeview div.lastExpandable-hitarea {
+    background-position: 0;
+}
+
+.treeview-red li {
+    background-image: url(../images/treeview-red-line.gif);
+}
+
+.treeview-red .hitarea,
+.treeview-red li.lastCollapsable,
+.treeview-red li.lastExpandable {
+    background-image: url(../images/treeview-red.gif);
+}
+
+.treeview-black li {
+    background-image: url(../images/treeview-black-line.gif);
+}
+
+.treeview-black .hitarea,
+.treeview-black li.lastCollapsable,
+.treeview-black li.lastExpandable {
+    background-image: url(../images/treeview-black.gif);
+}
+
+.treeview-gray li {
+    background-image: url(../images/treeview-gray-line.gif);
+}
+
+.treeview-gray .hitarea,
+.treeview-gray li.lastCollapsable,
+.treeview-gray li.lastExpandable {
+    background-image: url(../images/treeview-gray.gif);
+}
+
+.treeview-famfamfam li {
+    background-image: url(../images/treeview-famfamfam-line.gif);
+}
+
+.treeview-famfamfam .hitarea,
+.treeview-famfamfam li.lastCollapsable,
+.treeview-famfamfam li.lastExpandable {
+    background-image: url(../images/treeview-famfamfam.gif);
+}
+
+.treeview .placeholder {
+    background: url(../images/ajax-loader.gif) 0 0 no-repeat;
+    height: 16px;
+    width: 16px;
+    display: block;
+}
+
+.filetree li {
+    padding: 3px 0 2px 16px;
+}
+
+.filetree span.folder,
+.filetree span.file {
+    padding: 1px 0 1px 16px;
+    display: block;
+}
+
+.filetree span.folder {
+    background: url(../images/folder.gif) 0 0 no-repeat;
+}
+
+.filetree li.expandable span.folder {
+    background: url(../images/folder-closed.gif) 0 0 no-repeat;
+}
+
+.filetree span.file {
+    background: url(../images/file.gif) 0 0 no-repeat;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE>
+<html lang="zh-CN">
+<head>
+    <title>数据结构在线演示</title>
+    <meta charset="utf-8">
+    <meta http-equiv="keywords" content="数据结构,二叉树,二叉查找树">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=GB2312">
+    <!-- 导入js和CSS-->
+    <link rel="stylesheet" href="../css/jquery.treeview.css" />
+    <link rel="stylesheet" href="../css/screen.css" />
+    <script src="../scripts/jquery.js"></script>
+    <script src="../scripts/jquery.cookie.js"></script>
+    <script src="jquery.treeview.js"></script>
+    <script type="text/javascript" src="../scripts/demo.js"></script>
+</head>
+
+<body>
+    <div id="banner">
+        <span>数据结构在线演示</span>
+        <div class="userinfo">
+            <span class="user">您好，陆路</span>
+            <a href="#" title="shezhi" class="set">个人设置</a>
+            <a href="#" title="exit">
+                <button class="exit">安全退出</button>
+            </a>
+        </div>
+    </div>
+    <div id="container">
+        <div id="leftlist">
+            <ul id="tree" class="filetree">
+                <li><span class="folder">数据结构</span>
+                    <ul>
+                        <li><span class="folder"><a href="#">数据结构基础知识</a></span></li>
+                        <li><span class="folder">线性结构</span>
+                            <ul>
+                                <li><span class="folder"><a href="#">单项链表</a></span></li>
+                                <li><span class="folder"><a href="#">双向链表</a></span></li>
+                                <li><span class="folder"><a href="#">栈</a></span></li>
+                                <li><span class="folder"><a href="#">队列</a></span></li>
+                            </ul>
+                        </li>
+                        <li><span class="folder">树形结构</span>
+                            <ul>
+                                <li><span class="folder"><a href="#">二叉树</a></span></li>
+                                <li><span class="folder"><a href="#">二叉查找树</a></span></li>
+                            </ul>
+                        </li>
+                        <li><span class="folder">图形数据</span>
+                            <ul>
+                                <li><span class="folder"><a>最短路径</a></span></li>
+                                <li><span class="folder"><a>生成树</a></span></li>
+                                <li><span class="folder"><a>拓扑排序</a></span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><span class="folder">作者序</span></li>
+            </ul>
+        </div>
+        <div id="rightchart">
+            <iframe src="main.html" class="frame1" scrolling="auto"></iframe>
+        </div>
+    </div>
+    <div id="footer">在这里添加</div>
+    <script type="text/javascript">
+    $(function() {
+        $("#tree").treeview();
+    });
+    var showChart = document.getElementById("rightchart");
+    </script>
+</body>
+
+</html>
